@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Contacto - Veterinaria La Rosarina</title>
+        <script src="js/auth.js"></script>
+    </head>
+
+    <body>
+
+        <header>
+            <nav class="navbar navbar-expand-lg w-100">
+                <div class="container">
+
+                    <div>
+                        <h1>Veterinaria La Rosarina</h1>
+                        <p>La atención que tu mascota merece</p>
+                    </div>
+
+                    <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#menuPrincipal"
+                        aria-controls="menuPrincipal"
+                        aria-expanded="false"
+                        aria-label="Abrir menú">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-end" id="menuPrincipal">
+
+                        <ul class="navbar-nav ms-auto align-items-lg-center">
+                            <li class="nav-item">
+                                <a class="nav-link text-white fw-bold" href="index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white fw-bold" href="institucional.html">Institucional</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white fw-bold active" href="contacto.html">Contacto</a>
+                            </li>
+                            <li class="nav-item nav-admin-only d-none">
+                                <a class="nav-link text-white fw-bold" href="mascotas.html">Mascotas</a>
+                            </li>
+                            <li class="nav-item nav-admin-only d-none">
+                                <a class="nav-link text-white fw-bold" href="veterinarios.html">Veterinarios</a>
+                            </li>
+                            <li class="nav-item nav-admin-only d-none">
+                                <a class="nav-link text-white fw-bold" href="turnos.html">Turnos</a>
+                            </li>
+                            <li class="nav-item nav-admin-only d-none">
+                                <a class="nav-link text-white fw-bold" href="historiaclinica.html">Historia Clínica</a>
+                            </li>
+                        </ul>
+
+                        <button id="modoOscuro" class="btn btn-outline-light ms-lg-3 mt-2 mt-lg-0">
+                            🌙
+                        </button>
+
+                        <div id="user-session-info" class="ms-lg-3 mt-2 mt-lg-0"></div>
+
+                    </div>
+
+                </div>
+            </nav>
+        </header>
+
+        <main class="container py-5">
+            <h2 class="mb-4">Contacto y Consultas</h2>
+
+            <div class="row g-4">
+                <div class="col-lg-7">
+                    <div class="card shadow-sm">
+                        <div class="card-body p-4">
+                            <h3 class="h4 card-title mb-3">Envianos tu mensaje</h3>
+                            <form id="form-contacto">
+                                <div class="mb-3">
+                                    <label for="nombreContacto" class="form-label">Nombre completo</label>
+                                    <input type="text" class="form-control" id="nombreContacto" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="emailContacto" class="form-label">Correo electrónico</label>
+                                    <input type="email" class="form-control" id="emailContacto" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="mensajeContacto" class="form-label">Mensaje o consulta</label>
+                                    <textarea class="form-control" id="mensajeContacto" rows="4" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-success">Enviar Consulta</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <h3 class="h4 card-title mb-3">Información de Contacto</h3>
+                            <ul class="list-unstyled">
+                                <li class="mb-3"><strong>📍 Dirección:</strong> San Lorenzo 2146, Rosario, Santa Fe</li>
+                                <li class="mb-3"><strong>📞 Teléfono:</strong> (0341) 456-7890</li>
+                                <li class="mb-3"><strong>🚨 Urgencias 24hs:</strong> (0341) 155-123456</li>
+                                <li class="mb-3"><strong>✉️ Email:</strong> contacto@larosarinaveterinaria.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Veterinaria La Rosarina - San Lorenzo 2146, Rosario, Santa Fe</p>
+        </footer>
+
+        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/modo-oscuro.js"></script>
+
+    </body>
+
+</html>
