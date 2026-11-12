@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Institucional - Veterinaria La Rosarina</title>
+        <script src="js/auth.js"></script>
+    </head>
+
+    <body>
+
+        <header>
+            <nav class="navbar navbar-expand-lg w-100">
+                <div class="container">
+
+                    <div>
+                        <h1>Veterinaria La Rosarina</h1>
+                        <p>La atención que tu mascota merece</p>
+                    </div>
+
+                    <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#menuPrincipal"
+                        aria-controls="menuPrincipal"
+                        aria-expanded="false"
+                        aria-label="Abrir menú">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-end" id="menuPrincipal">
+
+                        <ul class="navbar-nav ms-auto align-items-lg-center">
+                            <li class="nav-item">
+                                <a class="nav-link text-white fw-bold" href="index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white fw-bold active" href="institucional.html">Institucional</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white fw-bold" href="contacto.html">Contacto</a>
+                            </li>
+                            <li class="nav-item nav-admin-only d-none">
+                                <a class="nav-link text-white fw-bold" href="mascotas.html">Mascotas</a>
+                            </li>
+                            <li class="nav-item nav-admin-only d-none">
+                                <a class="nav-link text-white fw-bold" href="veterinarios.html">Veterinarios</a>
+                            </li>
+                            <li class="nav-item nav-admin-only d-none">
+                                <a class="nav-link text-white fw-bold" href="turnos.html">Turnos</a>
+                            </li>
+                            <li class="nav-item nav-admin-only d-none">
+                                <a class="nav-link text-white fw-bold" href="historiaclinica.html">Historia Clínica</a>
+                            </li>
+                        </ul>
+
+                        <button id="modoOscuro" class="btn btn-outline-light ms-lg-3 mt-2 mt-lg-0">
+                            🌙
+                        </button>
+
+                        <div id="user-session-info" class="ms-lg-3 mt-2 mt-lg-0"></div>
+
+                    </div>
+
+                </div>
+            </nav>
+        </header>
+
+        <main class="container py-5">
+            <section class="mb-5">
+                <h2>Sobre Nosotros</h2>
+                <p class="lead">
+                    Veterinaria La Rosarina nació con el compromiso de brindar atención veterinaria de excelencia en Rosario. Nos dedicamos al cuidado integral de las mascotas con una mirada empática y profesional.
+                </p>
+            </section>
+
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h3 class="card-title">Nuestra Misión</h3>
+                            <p class="card-text">
+                                Garantizar la salud y bienestar de los animales de compañía a través de servicios clínicos de alta calidad, prevención, tratamiento oportuno y concientización sobre la tenencia responsable.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h3 class="card-title">Nuestra Visión</h3>
+                            <p class="card-text">
+                                Ser la clínica veterinaria de referencia regional, reconocida por el profesionalismo de nuestro equipo, la tecnología aplicada y la calidez en la atención de cada paciente.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Veterinaria La Rosarina - San Lorenzo 2146, Rosario, Santa Fe</p>
+        </footer>
+
+        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/modo-oscuro.js"></script>
+
+    </body>
+
+</html>
