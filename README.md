@@ -1,2 +1,6 @@
-# ENTREGA4
-Trabajo final integrador de IDW-2026
+Federico Jose Rodriguez
+Lucas Samuel Beltran
+Micaela Calviño
+Nicolás Vicentín
+Silvina Soledad Aguilar
+
